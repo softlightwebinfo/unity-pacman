@@ -63,9 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Fruit.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GhostMovement.cs" />
     <Compile Include="Assets\Scripts\PacDot.cs" />
     <Compile Include="Assets\Scripts\PacmanMovement.cs" />
+    <Compile Include="Assets\Scripts\UiManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/rafaelgonzalezmunoz/Developer/Unity/Pocman/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

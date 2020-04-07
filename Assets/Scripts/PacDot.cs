@@ -9,6 +9,7 @@ public class PacDot : MonoBehaviour
         if (otherCollider.CompareTag("Player"))
         {
             Destroy(this.gameObject);
+            UiManager.sharedInstance.ScorePoints(100);
         }
     }
 }
