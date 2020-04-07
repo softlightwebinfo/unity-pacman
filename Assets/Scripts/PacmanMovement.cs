@@ -15,12 +15,12 @@ public class PacmanMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // Calculamos el nuevo punto donde hay que ir en base a la variable de destino
-        Vector2 newPos = Vector2.MoveTowards(this.transform.position, this.destination, this.speed);
+        Vector2 newPos = Vector2.MoveTowards(this.transform.position, this.destination, this.speed * Time.deltaTime);
         // Usamos el riigidbody para transportar a Pacman hasta dicha posición
         GetComponent<Rigidbody2D>().MovePosition(newPos);
         float distanceToDestination = Vector2.Distance((Vector2)this.transform.position, this.destination);
 
-        if (distanceToDestination < 1f)
+        if (distanceToDestination < 2.0f)
         {
             if (Input.GetKey(KeyCode.W) && this.CanMoveTo(Vector2.up))
             {

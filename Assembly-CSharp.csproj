@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GhostMovement.cs" />
     <Compile Include="Assets\Scripts\PacDot.cs" />
     <Compile Include="Assets\Scripts\PacmanMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
